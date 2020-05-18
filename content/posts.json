@@ -1,0 +1,73 @@
+[
+    {
+        "programim":[
+            {
+                "kollokviume": [
+                    "C++.png",
+                    "cplus.jpg",
+                    "chain-hashing-1.png",
+                    "c++.jpg"
+                ],
+                "ushtrime":[
+                    "Per ni numer te dhene duhet qe te inkuadroni 2",
+                    "GJEJENI FORMULEN E FIBONACIT NESEEE ....",
+                    "faktorieli i numrit te caktuar ....",
+                    "Ndajeni numrin e dhene nga useri ne shifra dhe mblidh numrin....",
+                    "GJEJENI FORMULEN E FIBONACIT NESEEE ...."
+                ],
+                "profesor":[
+                    "majlinda.jpg",
+                    "profesor3.jpg"
+                    
+                ]
+                
+            }
+        ],
+        "arkitektur":[
+            {
+                "kollokviume": [
+                    "Comp-arc.png",
+                    "ABasicComputer.gif",
+                    "vn_cpu.png",
+                    "von.jpg"
+                ],
+                "ushtrime":[
+                    "Sasia e të dhënave që transferohet midis pajisjes I/O dhe memorjes/procesorit",
+                    "Arkitektura esht Per ni numer te dhene duhet qe te inkuadroni 2",
+                    "ARKITEKTURA ESHTE GJEJENI FORMULEN E FIBONACIT NESEEE ....",
+                    "Procesori kontrollon vazhdimisht për të parë nëse veprimi ka përfunduar.",
+                    "Southbridge(I/O controller) - lidhet me pjeset e hardverit qe kan shpejtsi me te vogel. Kontrollon input output funksionet (USB, audio, BIOS, interrupt handler)."
+                ],
+                "profesor":[
+                    "profesor1.jpg",
+                    "profesor2.jpg",
+                    "download.jfif"
+                ]
+                
+            }
+        ],
+        "web":[
+            {
+                "kollokviume": [
+                    "html.jpg",
+                    "HTML.jpeg",
+                    "css.png",
+                    "javasc.png"
+                ],
+                "ushtrime":[
+                    "Udhëzime: Merrni arhivën nga folderi Lab2 dhe ekstraktojeni lokalisht. Hapni fajllin punues multimedia.html dhe kryeni detyrat e mëposhtme:Shtoni tri linqe (Products, Reviews dhe Contact Us) të cilët ju dërgojnë në dokumentet (ato do i krijoni si fajla te ri) multimedia.html, reviews.html dhe contactus.html.",
+                    "WEBI ESHT NJE NDER - GJEJENI FORMULEN E FIBONACIT NESEEE ....",
+                    "Krijoni një html hypertext tjetër të emëruar contactus.html e cila ka format hyrese si vijon: Name, Last name, e-mail dhe comments.",
+                    "continue.html duhet të permban linkun Back që të kthen në multimedia.html"
+
+                ],
+                "profesor":[
+                    "walter-white-breaking-bad.jpg",
+                    "prof.jpg"
+                    
+                ]
+                
+            }
+        ]
+    }
+]

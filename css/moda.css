@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,600,700|Source+Sans+Pro:300,400,600,700&display=swap");
+.modal__container {
+  width: 100%;
+  height: 100vh;
+  font-family: "Open Sans";
+  position: absolute;
+  background: rgba(248, 248, 248, 0.4);
+  pointer-events: none;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  z-index: 2;
+  opacity: 0;
+}
+
+.modal__container:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal__container .modal {
+  margin: auto;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background: white;
+  -webkit-box-shadow: 0px 5px 12px 3px #92a3eb;
+          box-shadow: 0px 5px 12px 3px #92a3eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 200px) and (max-width: 400px) {
+  .modal__container .modal {
+    width: 250px;
+    height: 400px;
+    font-size: 0.8rem;
+  }
+}
+
+.modal__container .modal #X {
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  background: #f11b5b;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 2px;
+  top: 15px;
+  text-align: center;
+}
+
+.modal__container .modal .label {
+  width: 350px;
+  height: 70px;
+  background: #6790ff;
+  position: absolute;
+  top: 10px;
+  border-radius: 10px;
+  font-family: "Open Sans";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "label_log label_reg";
+}
+
+@media (min-width: 200px) and (max-width: 400px) {
+  .modal__container .modal .label {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+.modal__container .modal .label .la {
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal__container .modal .label .label__log {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: label_log;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__container .modal .label .label__log p {
+  font-family: "Open Sans";
+  margin: 0;
+  color: white;
+}
+
+.modal__container .modal .label .label__log.active {
+  background: #3766e9;
+}
+
+.modal__container .modal .label .label__register {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: label_reg;
+}
+
+.modal__container .modal .label .label__register p {
+  font-family: "Open Sans";
+  margin: 0;
+  color: white;
+}
+
+.modal__container .modal .label .label__register.active {
+  background: #3766e9;
+}
+
+.modal__container .modal .main {
+  position: relative;
+  width: 350px;
+  height: 300px;
+  top: 70px;
+  font-family: "Open Sans";
+}
+
+@media (min-width: 200px) and (max-width: 400px) {
+  .modal__container .modal .main {
+    width: 200px;
+  }
+}
+
+.modal__container .modal .main .main__log {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.modal__container .modal .main .main__log.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.modal__container .modal .main .main__log form {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 40% 30% 30%;
+      grid-template-rows: 40% 30% 30%;
+      grid-template-areas: "email" "password" "forgot";
+}
+
+.modal__container .modal .main .main__log form #po {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__container .modal .main .main__log form i {
+  font-size: 1.7rem;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.modal__container .modal .main .main__log form input {
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+  width: 220px;
+  height: 50px;
+  outline: none;
+}
+
+.modal__container .modal .main .main__log form .email {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: email;
+}
+
+.modal__container .modal .main .main__log form .email:hover i {
+  color: #6790ff;
+}
+
+.modal__container .modal .main .main__log form .pass {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: password;
+}
+
+.modal__container .modal .main .main__log form .pass:hover i {
+  color: #6790ff;
+}
+
+.modal__container .modal .main .main__log form .forgot {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: forgot;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal__container .modal .main .main__log form .forgot #submit {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: white;
+  background: #6eaffa;
+}
+
+.modal__container .modal .main .main__log form .forgot p {
+  position: relative;
+  top: 7px;
+}
+
+.modal__container .modal .main .main__reg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 0;
+  font-family: "Open Sans";
+}
+
+.modal__container .modal .main .main__reg.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.modal__container .modal .main .main__reg form {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 25% 25% 25% 25%;
+      grid-template-rows: 25% 25% 25% 25%;
+      grid-template-areas: "email" "password" "again-password";
+}
+
+.modal__container .modal .main .main__reg form #po {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal__container .modal .main .main__reg form i {
+  font-size: 1.7rem;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.modal__container .modal .main .main__reg form input {
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+  width: 220px;
+  height: 50px;
+  outline: none;
+}
+
+.modal__container .modal .main .main__reg form .email {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: email;
+}
+
+.modal__container .modal .main .main__reg form .email:hover i {
+  color: #6790ff;
+}
+
+.modal__container .modal .main .main__reg form .pass {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: password;
+}
+
+.modal__container .modal .main .main__reg form .pass:hover i {
+  color: #6790ff;
+}
+
+.modal__container .modal .main .main__reg form .again-password {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: again-password;
+}
+
+.modal__container .modal .main .main__reg form .again-password:hover i {
+  color: #6790ff;
+}
+
+.modal__container .modal .main .main__reg form .forgot {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal__container .modal .main .main__reg form .forgot #submit {
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: white;
+  background: #6eaffa;
+  cursor: pointer;
+}
+
+.modal__container .modal .main .main__reg form .forgot p {
+  position: relative;
+  top: 7px;
+  font-family: "Open Sans";
+}
+/*# sourceMappingURL=moda.css.map */

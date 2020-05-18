@@ -1,0 +1,288 @@
+$primaryColor:  rgb(103, 144, 255);
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,600,700|Source+Sans+Pro:300,400,600,700&display=swap");
+@mixin mobile{
+    @media(min-width:200px) and (max-width:400px){
+        @content;
+    }
+}
+.modal__container{
+    width: 100%;
+    height: 100vh;
+    font-family: "Open Sans";
+    position: absolute;
+    background: rgba(248, 248, 248, 0.4);
+    
+   
+    pointer-events: none;
+    transition: all 500ms ease;
+    z-index: 2;
+    opacity: 0;
+    &:target{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    .modal{
+        margin: auto;
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        bottom: 0px;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        background: white;
+        box-shadow: 0px 5px 12px 3px rgba(146,163,235,1);
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        @include mobile{
+            width: 250px;
+            height: 400px;
+            font-size: 0.8rem;
+            
+        }
+        #X{
+            text-decoration: none;
+            color: white;
+            border-radius: 3px;
+            background: rgb(241, 27, 91);
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            right: 2px;
+            top: 15px;
+            text-align: center;
+        }
+        .label{
+
+            width: 350px;
+            height: 70px;
+            @include mobile{
+                width: 200px;
+                height: 50px;
+            }
+            background:$primaryColor;
+            position: absolute;
+            top: 10px;
+            border-radius: 10px;
+            font-family: "Open Sans";
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas:
+                "label_log label_reg";
+            .la{
+                margin:15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                cursor: pointer;
+                
+            }
+
+            .label__log{
+                p{
+                    font-family: "Open Sans";
+                    margin: 0;
+                    color: white;
+                }
+                grid-area: label_log;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &.active{
+                    background: rgb(55, 102, 233);
+                }
+                
+            }
+            .label__register{
+                p{
+                    font-family: "Open Sans";
+                    margin: 0;
+                    color: white;
+                }
+                grid-area: label_reg;
+                &.active{
+                    background: rgb(55, 102, 233);
+                    
+                }
+            }
+        }
+        .main{
+            position: relative;
+            width: 350px;
+            height: 300px;
+            @include mobile{
+                width: 200px;
+            }
+            top: 70px;
+            font-family: "Open Sans";
+            .main__log{
+                position: absolute;
+                top: 0;
+                opacity: 0;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                &.active{
+                    opacity: 1;
+                    z-index: 2;
+                }
+                form{
+                    height: 100%;
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: 40% 30% 30%;
+                    grid-template-areas: 
+                        "email"
+                        "password"
+                        "forgot";
+                    #po{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    i{
+                        font-size: 1.7rem;
+                        margin-right: 10px;
+                        margin-top: 10px;
+                    
+                    }
+                    
+                    input{
+                        border: none;
+                        background: none;
+                        border-bottom: 1px solid black;
+                        width: 220px;
+                        height: 50px;
+                        outline: none;
+                        
+                    }
+                    .email{
+                        grid-area: email;
+                        
+                        &:hover{
+                            i{
+                                color: $primaryColor;
+                            }
+                        }
+                    }
+                    .pass{
+                        grid-area: password;
+                        
+                        &:hover{
+                            
+                            i{
+                                color: $primaryColor;
+                            }
+                        }
+                    }
+                    .forgot{
+                        grid-area: forgot;
+                        flex-direction: column;
+                        #submit{
+                            cursor: pointer;
+                            width: 100px;
+                            height: 40px;
+                            border: none;
+                            color: white;
+                            background: rgb(110, 175, 250);
+                        }
+                        p{
+                            position: relative;
+                            top: 7px;
+                            
+                        }
+                    }
+                }
+            }
+            .main__reg{
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                z-index: 0;
+                font-family: "Open Sans";
+                &.active{
+                    opacity: 1;
+                    z-index: 1;
+                }
+                form{
+                    height: 100%;
+                    display: grid;
+                    grid-template-columns: 100%;
+                    grid-template-rows: 25% 25% 25% 25%;
+                    grid-template-areas: 
+                        "email"
+                        "password"
+                        "again-password";
+                    #po{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    i{
+                        font-size: 1.7rem;
+                        margin-right: 10px;
+                        margin-top: 10px;
+                        
+                    }
+                    
+                    input{
+                        border: none;
+                        background: none;
+                        border-bottom: 1px solid black;
+                        width: 220px;
+                        height: 50px;
+                        outline: none;
+                        
+                    }
+                    .email{
+                        grid-area: email;
+                        &:hover{
+                            i{
+                                color: $primaryColor;
+                            }
+                        }
+                    }
+                    .pass{
+                        grid-area: password;
+                        &:hover{
+                            i{
+                                color: $primaryColor;
+                            }
+                        }
+                    }
+                    .again-password{
+                        grid-area: again-password;
+                        &:hover{
+                            i{
+                                color: $primaryColor;
+                            }
+                        }
+                    }
+                    .forgot{
+                        
+                        flex-direction: column;
+                        #submit{
+                            width: 100px;
+                            height: 40px;
+                            border: none;
+                            color: white;
+                            background: rgb(110, 175, 250);
+                           cursor: pointer;
+                        }
+                        p{
+                            position: relative;
+                            top: 7px;
+                            font-family: "Open Sans";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

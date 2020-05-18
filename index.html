@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+    <link href="css/vendor/bootstrap.css" rel="stylesheet" />
+    <link href="css/vendor/font-awesome.css" rel="stylesheet" />
+    <link href="css/vendor/slick.css" rel="stylesheet" />
+    <link href="css/vendor/slick-theme.css" rel="stylesheet" />
+    <link href="css/vendor/odometer-theme-default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./css/moda.css">
+    
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="modal__container" id="modal">
+        <div class="modal">
+            <a href="#" id="X">X</a>
+            <div class="label">
+                <div class="la label__log ">
+                    <p >Logohu</p>
+                </div>
+                <div class="la label__register">
+                    <p >Regjistrohu</p>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main__log" >
+                    <form action="" id="log__form">
+                        <div class="email"  id="po">
+                            <i class="fas fa-envelope"></i>
+                            
+                            <input type="email" name="" id="log__email" placeholder="Email">
+                        </div>
+                        <div class="pass"  id="po">
+                            <i class="fas fa-lock"></i>
+                            
+                            <input type="password" name="" id="log__password" placeholder="Password">
+                        </div>
+                        <div class="forgot"  id="po">
+                            <input id="submit" type="submit" value="Logohu" >
+                            
+                            <p>Forgot <a href="#">Password ?</a></p>
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="main__reg">
+                    <form action="" id="reg__form">
+                        <div class="email" id="po">
+                            <i class="fas fa-envelope"></i>
+                            
+                            <input type="email" name="" id="reg__email" placeholder="Email">
+                        </div>
+                        <div class="pass" id="po">
+                            <i class="fas fa-lock"></i>
+                            
+                            <input type="password" name="" id="reg__pass" placeholder="Password">
+                        </div>
+                        <div class="again-pass" id="po">
+                            <i class="fas fa-lock"></i>
+                           
+                            <input type="password" name="" id="reg__con" placeholder="Confirm Password">
+                        </div>
+                        <div class="forgot" id="po">
+                            <input id="submit" type="submit" value="Regjistrohu">
+                            <p>Forgot <a href="#">Email ?</a></p>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="font-size: 1.8rem;"><span style="color: white;">US</span>  seeu</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" class="active">Ballina</a></li>
+                    <li><a href="about.html">Rreth nesh</a></li>
+                    
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu"><i class="fa fa-bars"></i></div>
+        </div>
+    </header>
+
+    <div class="home-slider">
+        <div class="home-slider--wrapper">
+            <div>
+                <div class="home-slider--wrapper__inner" style="background-image: url('assets/img/seeu2.jpg')">
+                    <div class="container">
+                        <h3>Behu shfrytzues i aplikacionit tone</h3>
+                        <h1>Mire se vini</h1>
+                        <span class="dot-dash">.</span>
+                        <p>Web applikacioni i krijuar ka perqellim te pregaditjes se studenteve qe i perkasin universitetit SEEU, me qellim qe te marrin njohuri rreth lendeve, profesoreve, planprogramit etj.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="home-slider--wrapper__inner" style="background-image: url('assets/img/seeu1.jpg')">
+                    <div class="container">
+                        <h3>Behu shfrytzues i aplikacionit tone</h3>
+                        <h1>Mire se vini</h1>
+                        <span class="dot-dash">.</span>
+                        <p>Gjithashtu ky aplikacion i mundeson nxenesve t ekonektohen me kampuset tjera te universitetit te shkembejn ushtrime , mendime, kollokviume etj.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-slider--nav">
+            <div class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+            <div class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+        </div>
+        <div class="home-slider--anchor">
+            <span><i class="fas fa-level-down-alt" style="font-size: 2rem;" aria-hidden="true"></i></span>
+            
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <section class="four-elements">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="four-elements--image"><i class="fas fa-code" aria-hidden="true"></i></div>
+                        <h3>Shkenca Kompjuterike</h3>
+                        <p>Per studentet e Shkencave Kompjuterike.</p>
+                        <p><a href="#modal" style="border: 1px solid;font-size: 1rem; padding-left: 15px;padding-right: 15px; padding-top: 3px; padding-bottom: 3px;" >Kyçu</a></p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="four-elements--image"><i class="fas fa-language" aria-hidden="true"></i></div>
+                        <h3>Gjuhe dhe Komunikim</h3>
+                        <p>Per studentet e Gjuhe dhe Komunikim.</p>
+                        <p><a href="#modal" style="border: 1px solid;font-size: 1rem; padding-left: 15px;padding-right: 15px; padding-top: 3px; padding-bottom: 3px;" >Kyçu</a></p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="four-elements--image"><i class="fas fa-gavel" aria-hidden="true"></i></div>
+                        <h3>Shkencat Juridike</h3>
+                        <p>Per studentet e Shkencave Juridike (Drejtesise).</p>
+                        <p ><a href="#modal" style="border: 1px solid;font-size: 1rem; padding-left: 15px;padding-right: 15px; padding-top: 3px; padding-bottom: 3px;" >Kyçu</a></p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="four-elements--image"><i class="fas fa-users" aria-hidden="true"></i></div>
+                        <h3>Shkencat Shoqerore</h3>
+                        <p>Per studentet e Shkencave Shoqerore.</p>
+                        <p><a href="#modal" style="border: 1px solid;font-size: 1rem; padding-left: 15px;padding-right: 15px; padding-top: 3px; padding-bottom: 3px;" >Kyçu</a></p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="four-elements--image"><i class="fas fa-briefcase" aria-hidden="true"></i></div>
+                        <h3>Biznes dhe Ekonomi</h3>
+                        <p>Per studentet e Biznesit dhe Ekonomise.</p>
+                        <p><a href="#modal" style="border: 1px solid;font-size: 1rem; padding-left: 15px;padding-right: 15px; padding-top: 3px; padding-bottom: 3px;" >Kyçu</a></p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="four-elements--image"><i class="fas fa-user-graduate" aria-hidden="true"></i></div>
+                        <h3>Studimet e Doktoratures</h3>
+                        <p>Per studentet ne Studimet e Doktoratures.</p>
+                        <p ><a href="#modal" style="border: 1px solid;font-size: 1rem; padding-left: 15px;padding-right: 15px; padding-top: 3px; padding-bottom: 3px;" >Kyçu</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="our-history">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12 col-xs-12">
+                        <img src="assets/img/macbook_PNG71.png" alt="" />
+                    </div>
+                    <div class="col-md-7 col-sm-12 col-xs-12">
+                        <h2>Historia jone</h2>
+                        <p>Ne jemi ne grup qe per shkak te ni projekti qe kemi pasur tek Internet Technology kemi vendosur ta krijojme ket aplikacion e cila do te sherbej ne te ardhmen tek shum student te rinje.</p>
+                        <p>Internet Technology esht nje lende qe mesohet ne semestrin e 3 dhe ka per detyr ta aftesoj studentin te dizajnoj  nje dokument, dhe e afteson ne teknologjit (HTML, CSS, Javascript).</p>
+                        <a href="about.html" class="button">Kliko per me shum...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-study">
+            <div class="container">
+                <h2>Perse te beheni shfrytzues</h2>
+                <p>Disa nga arsyet pse te antarsoheni ne kete aplikacion.</p>
+                <span class="dot-dash dark">.</span>
+            </div>
+            <div class="container">
+                <div class="case-study--sliders">
+                    <div class="case-study--left">
+                        <div class="case-study--left__textslider">
+                            <div>
+                                <div class="case-study--left__textslider__image"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                                <h4>Arsyeja e pare</h4>
+                                <p>Arsyeja e pare esht se do njoftohesh rreth gjitha gjerave qe ke nevoj ne studime, gjat tere cikleve. Do jesh ne kontakt me shum student tjer do njoftohesh se cila lend do te nevoitet me shum dhe cila jep prioritet ne ditet e sotme...</p>
+                                
+                            </div>
+                            <div>
+                                <div class="case-study--left__textslider__image"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
+                                <h4>Arsyeja e dyte</h4>
+                                <p>Arsyeja e dyte esht se do kesh akses ne shum ushtrime kuize dhe kollokviume te lendeve te ndryshme qe do te kesh gjat gjitha cikleve studimore...</p>
+                               
+                            </div>
+                           
+                        </div>
+                        <div class="case-study--left__dots"></div>
+                    </div>
+                    <div class="case-study--right">
+                        <div class="case-study--right__imageslider">
+                            <div>
+                                <img src="assets/img/auditorium-benches-chairs-class-207691.jpg" alt="" />
+                            </div>
+                            <div>
+                                <img src="assets/img/adult-blur-books-close-up-261909.jpg" alt="" />
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="statistics">
+            <div class="container" style="display: flex;justify-content: center;align-items: center;">
+                
+                <div class="statistics--item">
+                    <div class="statistics--item__image"><i class="fas fa-file-code"></i></div>
+                    <h3 class="odometer second">0</h3>
+                    <h5>Zhvilluesit e Webit</h5>
+                </div>
+                <div class="statistics--item">
+                    <div class="statistics--item__image"><i class="fas fa-user"></i></div>
+                    <h3 class="odometer third">0</h3>
+                    <h5>Shfrytzuesit online</h5>
+                </div>
+                <div class="statistics--item">
+                    <div class="statistics--item__image"><i class="fas fa-users"></i></div>
+                    <h3 class="odometer first">0</h3>
+                    <h5>Shfrytzuesit</h5>
+                </div>
+               
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="container">
+                <h2>Sponsorizuesit</h2>
+                <p>Falenderime te posatshme per kompanite qe e sponsorizojne kete web aplikacion.</p>
+                <span class="dot-dash dark">.</span>
+                <div class="partners--container">
+                    <div class="partners--item">
+                        <div class="partners--item__image">
+                            <img src="assets/img/partner1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="partners--item">
+                        <div class="partners--item__image">
+                            <img src="assets/img/partner1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="partners--item">
+                        <div class="partners--item__image">
+                            <img src="assets/img/partner1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="partners--item">
+                        <div class="partners--item__image">
+                            <img src="assets/img/partner1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="partners--item">
+                        <div class="partners--item__image">
+                            <img src="assets/img/partner1.png" alt="">
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+       
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <p><a href="#">US seeu</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="text/javascript">
+        window.odometerOptions = {
+            format: '(,ddd)',
+        };
+    </script>
+    <script src="js/vendor/jquery-3.1.0.min.js"></script>
+    <script src="js/vendor/jquery.easing.min.js"></script>
+    <script src="js/vendor/tether.js"></script>
+    <script src="js/vendor/bootstrap.js"></script>
+    <script src="js/vendor/slick.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/vendor/odometer.min.js"></script>
+    <script src="./js/log.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
